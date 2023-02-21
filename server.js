@@ -24,6 +24,18 @@ app.get('/Musician', (request, response) => {
       res.json(Musician);
     });
   });
+
+  // app.post('/Musician', (request, response) => {
+  //   Musician.findAll().then(Musician => {
+  //     request.json(Musician);
+  //   });
+  // });
+  // app.get('/Musician/:id', (req, res) => {
+  //   const musicianId = req.params.id;
+  //   Musician.findByPk(musicianId).then(Musician => {
+  //     res.json(Musician);
+  //   });
+  // });
   
 app.listen(port, () => {
     sequelize.sync();
